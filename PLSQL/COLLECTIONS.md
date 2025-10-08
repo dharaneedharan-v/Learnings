@@ -4,7 +4,7 @@ Each element is identified by a unique subscript that represents its position in
 
 
 
-![[Pasted image 20251003230413.png]]
+<img width="1919" height="867" alt="Screenshot 2025-10-03 230411" src="https://github.com/user-attachments/assets/6bee1ca6-8616-448f-bdbe-cb89a0676f3b" />
 
 
 PL/SQL provides three collection types −
@@ -23,7 +23,7 @@ PL/SQL provides three collection types −
 ### Index By Tables :
 
 
-![[Pasted image 20251003231441.png]]
+<img width="1022" height="436" alt="Screenshot 2025-10-03 231414" src="https://github.com/user-attachments/assets/576915b9-2d6f-4f4a-b5e5-a62d63a90788" />
 
 
 
@@ -93,7 +93,7 @@ We can change the datatype according to that requirements...
 
 # NESTED TABLE
 
-![[Pasted image 20251003234437.png]]
+<img width="1051" height="424" alt="Screenshot 2025-10-03 234435" src="https://github.com/user-attachments/assets/de0178ed-b9ca-4e62-a738-88b7b67b6553" />
 
 
 In the Associaltive we will give the index of key word  , By default it is a Integer Indexed one....
@@ -206,7 +206,7 @@ ORA-06512: at line 9
 
 # VARRAY 
 
-![[Pasted image 20251004095052.png]]
+<img width="1041" height="420" alt="Screenshot 2025-10-04 095051" src="https://github.com/user-attachments/assets/f45327ae-40fb-4014-acbb-02eae01782f6" />
 
 
 Example :
