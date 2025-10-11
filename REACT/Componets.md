@@ -173,7 +173,7 @@ export { Greetings, Hello };
 
 ---
 
-### What is a Fragment?
+### What is a Fragment? 
 
 A **Fragment** is a **special wrapper in React** that lets you group **multiple elements** **without adding extra nodes to the DOM**.
 
@@ -220,3 +220,8 @@ export default Example;
 1. **No extra DOM element** – keeps the DOM cleaner.
 2. **Better for styling and layout** – avoids unnecessary wrappers.
 3. **Useful in lists or tables** – you can wrap multiple children without breaking structure.
+
+
+
+
+
