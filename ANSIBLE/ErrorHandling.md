@@ -2,7 +2,8 @@
 ### Error Handling in Ansible
 - Dealing with errors and failures in Ansible playbooks.
 - Error handling techniques and best practices.
-- Demonstrating error handling in practical scenarios.
+
+[x] Demonstrating error handling in practical scenarios.
 
 
 
