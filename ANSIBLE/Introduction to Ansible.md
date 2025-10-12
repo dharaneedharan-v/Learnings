@@ -124,6 +124,12 @@ In Ansible we tell to the Inventory File or Mentioning the Target Machines to In
 Simply by using the YAML 
 
 
+<!--
+  Documentation:
+  This note explains that Ansible uses Jinja templating, where variables are referenced using double curly braces, e.g., "{{ my_var_name }}".
+  Note: Correct spelling is "variables" and "format".
+-->
 
 
+> Ansible Follows a Jinja Templating where it the varibles are  referenced using double curly braces, e.g., "{{ my_var_name }}".
 
