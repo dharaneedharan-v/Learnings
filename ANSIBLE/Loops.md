@@ -1,3 +1,10 @@
+
+# Ansible Conditionals and Loops
+
+- Using conditionals in Ansible to control task execution.
+- Implementing loops for repetitive tasks.
+- [x] Practical examples of conditionals and loops in playbooks.
+
 ## Condition (when)
 
 We use `when` to run a task **only if** some condition is true.
@@ -5,6 +12,7 @@ We use `when` to run a task **only if** some condition is true.
 ### 🔹 Example 1: Simple variable check
 
 ```yaml
+
 - name: Install nginx only on Ubuntu
   apt:
     name: nginx
@@ -147,3 +155,23 @@ You can use both `when` and `loop` together!
 | Old style loop | `with_items` | Install list of tools |
 | Condition + Loop | `loop` + `when` | Run on specific OS only |
 | Retry loop | `until` | Wait for service availability |
+
+
+---
+
+
+Ansible Realtime project
+Task 1
+Create three(3) EC2 instances on AWS using Ansible loops
+
+2 Instances with Ubuntu Distribution
+1 Instance with Centos Distribution
+Hint: Use connection: local on Ansible Control node.
+
+Task 2
+Set up passwordless authentication between Ansible control node and newly created instances.
+
+Task 3
+Automate the shutdown of Ubuntu Instances only using Ansible Conditionals
+
+Hint: Use when condition on ansible gather_facts
