@@ -1,3 +1,9 @@
+# Ansible Vault for Security
+
+- Understanding Ansible Vault and its role in securing sensitive data.
+- Encrypting and decrypting files using Ansible Vault.
+- Best practices for managing secrets and sensitive data in Ansible.
+
 ## **1. Need for Ansible Vault & Core Concepts**
 
 - **Purpose:**
