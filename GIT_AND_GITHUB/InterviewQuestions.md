@@ -49,3 +49,23 @@ git pull origin main
     
 - *`git pull` → Like **downloading and reading the messages**, so your chat updates.*
 
+
+
+
+
+### 🔹 _What does the `git diff` command do in Git?_ 
+
+>  **git diff = show me what changed — line by line.**  
+
+You check before you add, after you add, or between commits —  
+and those `+` / `-` lines tell the full story.
+
+💬 In short:
+
+| Situation         | Command                    | Meaning                        |
+| ----------------- | -------------------------- | ------------------------------ |
+| Unstaged changes  | `git diff`                 | Before `git add`               |
+| Staged changes    | `git diff --staged`        | After `git add`, before commit |
+| Since last commit | `git diff HEAD`            | Full “before & after”          |
+| Compare commits   | `git diff A B`             | Version vs version             |
+| Compare branches  | `git diff branch1 branch2` | Branch vs branch               |
