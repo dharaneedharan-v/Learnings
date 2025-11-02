@@ -21,4 +21,22 @@ https://medium.com/@jobanjitsinghamritsar/how-to-configure-cisco-switch-in-10-st
 <img width="508" height="271" alt="image" src="https://github.com/user-attachments/assets/75565b8d-1e62-471d-a2c4-f9d7616cd842" />
 
 
+## **Types of Storage in Cisco IOS**
 
+Cisco devices have **four main types of memory/storage**, each with a **specific purpose**.
+
+| **Memory Type** | **Full Form** | **Purpose / Function** |
+| --- | --- | --- |
+| **1️⃣ ROM** | Read Only Memory | - Contains **bootstrap program** and **POST (Power-On Self-Test)**.  - Used to **load the IOS** during bootup. |
+| **2️⃣ FLASH** | — | - Stores the **Cisco IOS image (Operating System)**.  - **Non-volatile**, data remains even after reboot. |
+| **3️⃣ NVRAM** | Non-Volatile RAM | - Stores **startup configuration file** (`startup-config`).  - Configuration loads from here when the device boots. |
+| **4️⃣ RAM** | Random Access Memory | - Stores **running configuration** (`running-config`) and **routing tables**.  - **Volatile**, data is lost after reboot. |
+
+---
+
+### 🧠 **In short:**
+
+- **ROM:** Boot and diagnostics.
+- **FLASH:** Stores IOS software.
+- **NVRAM:** Saves startup configuration.
+- **RAM:** Holds running configuration.
