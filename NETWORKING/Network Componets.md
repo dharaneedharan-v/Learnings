@@ -103,5 +103,15 @@ This means it can **power network devices** like:
 
 📡 The router ensures that data takes the **most efficient and accurate path** to reach its destination (like between LANs and the Internet).
 
+---
+
+## Half Duplex vs Full Duplex
+
+Both define **how data is transmitted** between two devices in a network.
+
+- **Half Duplex →** One-way at a time. [ HUB ]
+    
+- **Full Duplex →** Both ways at the same time. [ Switch ]
+
 
 
