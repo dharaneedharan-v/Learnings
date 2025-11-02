@@ -146,3 +146,7 @@ Think like a **post letter** 📨
 
 > “IP shows location, MAC shows identity.  
 > Both are needed to send data correctly in and out of a network.”
+
+
+### ARP HEADER : 
+<img width="774" height="401" alt="image" src="https://github.com/user-attachments/assets/f737de7d-b5f1-4152-b426-61f50f669c1a" />
