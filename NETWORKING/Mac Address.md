@@ -1,7 +1,6 @@
 
 Mac Address Aging. 
 Ethernet Addressing 
-
 NIC 
 
 
@@ -102,3 +101,48 @@ PS C:\Users\dhara>
 > It uses **broadcast request** and **unicast reply.**
 > 
 > Used within the **same LAN** for data delivery.
+
+
+
+## 🧠 **Why We Need Both IP and MAC**
+
+- **IP address** → tells **where** the device is (location).
+    
+- **MAC address** → tells **who** the device is (identity).
+    
+
+---
+
+### 🔹 Example:
+
+Think like a **post letter** 📨
+
+- **IP = House address** (to reach the correct street/city).
+    
+- **MAC = Person’s name** (to give it to the right person in that house).
+    
+
+---
+
+### ⚙️ Why both are needed:
+
+- **Router** uses **IP** to send data between networks.
+    
+- **Switch** uses **MAC** to send data inside the same network.
+    
+
+---
+
+### ⚠️ If only one is used:
+
+- Only IP → can’t find exact device.
+    
+- Only MAC → can’t reach other networks.
+    
+
+---
+
+### ✅ Simple line for exam:
+
+> “IP shows location, MAC shows identity.  
+> Both are needed to send data correctly in and out of a network.”

@@ -40,3 +40,19 @@ Cisco devices have **four main types of memory/storage**, each with a **specific
 - **FLASH:** Stores IOS software.
 - **NVRAM:** Saves startup configuration.
 - **RAM:** Holds running configuration.
+
+
+
+
+
+To login : Possible ways to configure it.. 
+
+  
+
+logins :
+
+console
+
+Telnet
+
+SSH
