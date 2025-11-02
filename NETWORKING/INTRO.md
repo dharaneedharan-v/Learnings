@@ -5,3 +5,9 @@
 
 ⬅️ **De-encapsulation:** Removes them as data moves _up_ the layers.
 
+<img width="827" height="521" alt="image" src="https://github.com/user-attachments/assets/35c1590e-33bc-4319-b8e8-ef7a3e6b1fc7" />
+
+
+###  Protocol Data Unit (PDU)
+
+<img width="283" height="300" alt="image" src="https://github.com/user-attachments/assets/aab53c64-2da4-4dc8-9114-b790765677d8" />
