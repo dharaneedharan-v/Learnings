@@ -152,3 +152,154 @@ Think like a **post letter** 📨
 - Ethernet Header Contains the ARP also
 
 <img width="774" height="401" alt="image" src="https://github.com/user-attachments/assets/f737de7d-b5f1-4152-b426-61f50f669c1a" />
+
+
+
+
+## **How a Switch Learns MAC Addresses**
+
+A **switch** learns **which device (MAC address)** is connected to **which port** by watching the **source MAC** of the frames it receives.
+
+---
+
+### ⚙️ **Step-by-Step 
+
+Working**
+
+Let’s take an example:
+
+|Device|MAC Address|Connected Port|
+|---|---|---|
+|PC1|AA-AA-AA-AA-AA-AA|Port 1|
+|PC2|BB-BB-BB-BB-BB-BB|Port 2|
+
+---
+
+### 🪄 Step 1: **Frame Enters the Switch**
+
+- PC1 sends a frame → it enters the switch via **Port 1**.
+- Inside the frame:
+    - **Source MAC:** AA-AA-AA-AA-AA-AA
+    - **Destination MAC:** BB-BB-BB-BB-BB-BB
+
+---
+
+### 🪄 Step 2: **Switch Learns the Source MAC**
+
+- Switch reads the **Source MAC (AA-AA...)**
+- Adds it to its **MAC Address Table  like this:
+
+|MAC Address|Port|
+|---|---|
+|AA-AA-AA-AA-AA-AA|Port 1|
+
+So the switch now knows:
+
+> “If anyone wants to reach MAC AA-AA-AA, send data out of Port 1.”
+
+---
+
+### 🪄 Step 3: **Switch Checks Destination MAC**
+
+- Switch checks if **BB-BB-BB-BB-BB-BB** is already in its table.
+
+🟡 **If found:**
+
+→ Sends frame only to that port (**Unicast**).
+
+🔴 **If not found:**
+
+→ Floods the frame to all ports except the one it came from (**Broadcast flood**) to find the destination.
+
+---
+
+### 🪄 Step 4: **Switch Learns the Return Path**
+
+- PC2 replies back.
+- Now, switch sees:
+    - **Source MAC:** BB-BB-BB-BB-BB-BB
+    - It learns that MAC belongs to **Port 2**.
+
+|MAC Address|Port|
+|---|---|
+|AA-AA-AA-AA-AA-AA|Port 1|
+|BB-BB-BB-BB-BB-BB|Port 2|
+
+✅ Now the switch knows where both PCs are connected.
+
+---
+
+### ⚙️ **Step 5: Frame Forwarding**
+
+From now on, the switch sends frames **only to the correct port** — no more flooding.
+
+This is called **intelligent forwarding** or **MAC learning**.
+
+---
+
+## 📚 **MAC (CAM) Table Example**
+
+|MAC Address|VLAN|Port|Type|
+|---|---|---|---|
+|AA-AA-AA-AA-AA-AA|1|Fa0/1|Dynamic|
+|BB-BB-BB-BB-BB-BB|1|Fa0/2|Dynamic|
+
+---
+
+## ⚙️ **Types of MAC Entries**
+
+|Type|Meaning|
+|---|---|
+|**Dynamic**|Learned automatically by switch (auto timeout)|
+|**Static**|Manually configured (never expires)|
+
+---
+
+## 🎯 **In Simple (Exam Line)**
+
+> “Switch learns MAC addresses by reading the source MAC of incoming frames and mapping them to the port number.
+> 
+> It then uses this MAC table to forward frames only to the correct destination.”
+
+
+
+## Switch Forwarding Methods
+
+When a frame arrives at a switch, it can use different **forwarding techniques** based on **how quickly** and **how accurately** it wants to send data.
+
+---
+
+### 🧠 1. **Store-and-Forward Switching**
+
+**🪄 How it works:**
+
+- The switch **receives the entire frame** first.
+- It **checks for errors** using the **Frame Check Sequence (FCS)** at the end.
+- If no errors → forwards the frame to the correct port.
+
+**✅ Advantages:**
+
+- Error-free forwarding (detects bad frames).
+- Works with different network speeds (port speed mismatch).
+
+---
+
+### ⚡ 2. **Cut-Through Switching**
+
+**🪄 How it works:**
+
+- Switch **starts forwarding** the frame **as soon as it reads the destination MAC address** (first 6 bytes).
+- Doesn’t wait for the full frame or error check.
+
+**✅ Advantages:**
+
+- Very **low latency** (fast forwarding).
+---
+
+### 🧩 Summary Table
+
+| Method                | Waits for Full Frame? | Error Checking | Speed      | Typical Use                   |
+| --------------------- | --------------------- | -------------- | ---------- | ----------------------------- |
+| **Store-and-Forward** | ✅ Yes                 | ✅ Yes (FCS)    | 🐢 Slowest | Reliable enterprise switching |
+| **Cut-Through**       | ❌ No                  | ❌ No           | ⚡ Fastest  | Low-latency networks          |
+| **Fragment-Free**     | Partially (64 bytes)  | Partial        | ⚙️ Medium  | Legacy LANs (CSMA/CD)         |
