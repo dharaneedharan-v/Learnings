@@ -149,4 +149,6 @@ Think like a **post letter** 📨
 
 
 ### ARP HEADER : 
+- Ethernet Header Contains the ARP also
+
 <img width="774" height="401" alt="image" src="https://github.com/user-attachments/assets/f737de7d-b5f1-4152-b426-61f50f669c1a" />
