@@ -23,7 +23,7 @@ Suppose four computers (A, B, C, D) are connected to a hub.
 It works at the **Data Link Layer (Layer 2)** of the **OSI model** and is **intelligent**, unlike a hub.
 
 The switch uses **MAC addresses** to send data **only to the intended device**, not to everyone.
-
+ > HINT : By default it is a xxxxxxxxxxxxxxxxx
 ### **Working of a Switch**
 
 1. When a computer sends data, the **frame** (data + MAC info) reaches the switch.
