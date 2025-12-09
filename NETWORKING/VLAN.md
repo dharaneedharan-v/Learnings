@@ -78,3 +78,7 @@ A switch **with VLANs** (managed switch):
 
 <img width="1016" height="524" alt="image" src="https://github.com/user-attachments/assets/2826d770-5668-4696-b005-3e67e9dac6a6" />
 
+
+
+<img width="997" height="525" alt="image" src="https://github.com/user-attachments/assets/46449ee3-4c1b-48cd-bfdf-d406ced46637" />
+
