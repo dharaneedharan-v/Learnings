@@ -73,3 +73,8 @@ A switch **with VLANs** (managed switch):
 - Supports **inter-VLAN routing**
     
 - Provides better **scalability, performance, and security**
+
+
+
+<img width="1016" height="524" alt="image" src="https://github.com/user-attachments/assets/2826d770-5668-4696-b005-3e67e9dac6a6" />
+
